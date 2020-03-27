@@ -1,0 +1,69 @@
+/* Hello */
+
+/* font-family: 'Montserrat', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  grid-area: nav;
+  width: 100%;
+  background-color: lightcyan;
+}
+
+nav ul {
+  display: inline-flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav li {
+  padding: 1em;
+}
+
+#container {
+  grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(223, 10, 10, 0.5)),url(./media/harley_davidson_wallpaper.jpg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+}
+
+.githubicon img{
+    padding: 15px;
+    widows: 60px;;
+    height:60px;
+    object-fit: contain;
+}
+main {
+  grid-area: main;
+  background: lightslategray;
+}
+
+footer {
+  grid-area: footer;
+  background: lightyellow;
+}
