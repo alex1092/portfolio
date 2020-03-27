@@ -1,4 +1,5 @@
-/* Hello */
+/* My Color Scheme 
+#F6E8EA  #FF3864 #22181C #0FA3B1 #F13030*/
 
 /* font-family: 'Montserrat', sans-serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap");
@@ -8,14 +9,15 @@
   padding: 0;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: 'Montserrat', sans-serif;
+ 
 }
 
 nav {
   grid-area: nav;
   width: 100%;
-  background-color: lightcyan;
+  background-color: #F6E8EA;
 }
 
 nav ul {
@@ -27,43 +29,113 @@ nav ul {
 
 nav li {
   padding: 1em;
+  color: #261447;
 }
 
+nav li:hover {
+  background-color: #F39C6B;
+}
 #container {
-  grid-template-areas:
-    "nav nav nav"
-    "header header header"
-    "main main main"
-    "footer footer footer";
+  grid-template-areas: "nav nav nav" "header header header" "main main main" "footer footer footer";
 }
 
 header {
   grid-area: header;
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(223, 10, 10, 0.5)),url(./media/harley_davidson_wallpaper.jpg);
-  height: 80vh;
+  background: linear-gradient(-45deg, #F39C6B, #FF3864, #0197F6,#448FA3, #68C5DB);
+   height: 100vh;
   background-repeat: no-repeat;
   background-position: right;
-  background-size: cover;
+  background-size: 300% 300%;
+    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #F6E8EA;
+  font-size: 1.3em;
+  animation: gradient 8s ease infinite;
+}
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+header h1{
+  font-size: 3em;
+}
+a button {
+ background: #ffffff00;
+ padding:0.35em 1.2em;
+ border:0.1em solid white;
+ border-radius: 0.12em;
+ box-sizing: border-box;
+ text-decoration: none;
+ font-weight: 400;
+ font-size: 1.3rem;
+ color: #F6E8EA;
+ text-align: center;
+ transition: all 0.2s;
+ margin:20px 0 5px 0;
+ 
+}
+
+a button:hover{
+  color:#261447;
+  background-color:#F6E8EA;
+}
+
+
+.icons img {
+  margin-top: 10px;
+  widows: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: all 0,2s;
+}
+
+.icons img:hover{
+  transform: scale(1.1);
+
+}
+
+main {
+  grid-area: main;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
-  font-size: 1.2em;
-}
-
-.githubicon img{
-    padding: 15px;
-    widows: 60px;;
-    height:60px;
-    object-fit: contain;
-}
-main {
-  grid-area: main;
-  background: lightslategray;
+  flex-wrap: wrap;
+  padding: 10%;
 }
 
 footer {
   grid-area: footer;
-  background: lightyellow;
+  background: #F6E8EA;
+  align-items: baseline;
+ 
+}
+
+#footercontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footercontainer img{
+
+  height: 30px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+
+
+#footercontainer img:hover{
+  transform: scale(1.1);
 }
