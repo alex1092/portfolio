@@ -28,8 +28,10 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav li {
+nav a{
+  display: block;
   padding: 1em;
+  text-decoration: none;
   color: #261447;
 }
 
