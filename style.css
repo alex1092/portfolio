@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -28,9 +29,10 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav li {
-  padding: 1em;
+nav a{
+  display: block;
   color: #261447;
+  padding: 1em;
 }
 
 nav li:hover {
@@ -97,9 +99,18 @@ a button:hover {
   background-color: #F6E8EA;
 }
 
+.icons {
+  display: inline-block;
+  width: 100%;
+}
+icons a{
+  width: 40px;
+  height: 40px;
+  
+}
 .icons img {
   margin-top: 10px;
-  widows: 40px;
+  width: 40px;
   height: 40px;
   object-fit: contain;
   transition: all 0, 2s;
