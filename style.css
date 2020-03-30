@@ -16,9 +16,13 @@ body {
 /* Nav start */
 
 nav {
+  z-index: 1;
+  top: 0;
+  position: fixed;
   grid-area: nav;
   width: 100%;
   background-color: #f6e8ea;
+  overflow: hidden;
 }
 
 nav ul {
@@ -48,6 +52,7 @@ nav li:hover {
 /* header start */
 
 header {
+  margin-top: 30px;
   grid-area: header;
   background: linear-gradient(
     -45deg,
@@ -69,9 +74,11 @@ header {
   flex-direction: column;
   justify-content: center;
   color: #f6e8ea;
-  font-size: 1.3em;
+  font-size: 1.7em;
   animation: gradient 8s ease infinite;
 }
+
+
 
 @keyframes gradient {
   0% {
@@ -89,7 +96,7 @@ header h1 {
   font-size: 1.7em;
 }
 
-a button {
+.header-btn button {
   background: #ffffff00;
   padding: 0.35em 1.2em;
   border: 0.1em solid white;
@@ -107,6 +114,10 @@ a button {
 @media only screen #header-btn button:hover {
   color: #261447;
   background-color: #f6e8ea;
+}
+
+#portfolio-main{
+  padding: 10px;
 }
 
 .icons img {
@@ -190,7 +201,9 @@ footer {
 
 /* footer end */
 
-/* contact me form start */
+#contact-header{
+  height: 40vh;
+}
 
 #contactcontainer {
   height: 88vh;
@@ -212,13 +225,8 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 40vh;
 }
-
-#portfolio-header {
-  font-size: 2em;
-}
-
 
 
 .portfolioimg {
@@ -231,19 +239,19 @@ form {
   object-fit: contain;
   display: block;
 }
-.portfolio-link{
+.portfolio-link {
   margin-top: 10px;
   text-decoration: none;
   display: block;
   font-size: 1.2em;
-  padding: .4em .4em;
-  border: 2px solid #F13030;
+  padding: 0.4em 0.4em;
+  border: 2px solid #f13030;
   text-align: center;
 }
 
-.portfolio-link:hover{
+.portfolio-link:hover {
   transform: scale(1.2);
-  background-color: #F13030;
+  background-color: #f13030;
 }
 
 .portfolio-container {
@@ -260,8 +268,8 @@ form {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+  transition: 0.5s ease;
+  background-color: #008cba;
 }
 
 .portfolio-container:hover .portfolio-overlay {
@@ -293,7 +301,41 @@ form {
     background-color: lightblue;
     height: 300px;
   }
-
 }
 
 /* Start of blog page */
+#blog-header{
+  height: 40vh;
+}
+#blog-container {
+  margin: 1em;
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.blog-post {
+  margin: 10px;
+  background-color: lightblue;
+  padding:1em;
+}
+
+.blog-post img {
+  width: 250px;
+  height: 250px;
+}
+.blog-btn button {
+  border: black;
+  padding: 1em;
+  border: black 2px solid;
+  margin-top: 10px;
+  transition: all .2;
+}
+
+.blog-btn button:hover {
+  background-color: black;
+  color: white;
+}
