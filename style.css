@@ -1,5 +1,5 @@
 /* My Color Scheme 
-#F6E8EA  #FF3864 #22181C #0FA3B1 #F13030*/
+#F6E8EA  #FF3864 22181C# #0FA3B1 #F13030*/
 
 /* font-family: 'Montserrat', sans-serif;*/
 
@@ -51,11 +51,14 @@ header {
   grid-area: header;
   background: linear-gradient(-45deg, #F39C6B, #FF3864, #0197F6, #448FA3, #68C5DB);
   height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 300% 300%;
+  background-size: 400% 400%;
   text-align: center;
+  object-fit: contain;
   display: flex;
+  flex-flow: wrap;
   flex-direction: column;
   justify-content: center;
   color: #F6E8EA;
@@ -76,7 +79,7 @@ header {
 }
 
 header h1 {
-  font-size: 3em;
+  font-size: 1.7em;
 }
 
 a button {
@@ -94,7 +97,9 @@ a button {
   margin: 20px 0 5px 0;
 }
 
-a button:hover {
+@media only screen 
+
+#header-btn button:hover {
   color: #261447;
   background-color: #F6E8EA;
 }
@@ -115,38 +120,72 @@ a button:hover {
 
 main {
   grid-area: main;
+  display: grid;
+  grid-template-areas: "left right";
   text-align: center;
+  padding: 10%;
+}
+
+#about-me-left{
+  grid-area: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10%;
+}
+#about-me-left img{
+  width: 40px;
+  display: inline;
+}
+
+#about-me-right{
+  grid-area: right;
+  display: none;
+  margin: 10%;
+}
+ 
+
+#resume-btn button{
+  margin: 5%;
+  border: black 1px solid;
+  color: black;
+  padding: .3em 2em;
+}
+
+#resume-btn button:hover{
+  background-color: #22181C;
+  color: white;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  main{
+    margin: 5%;
+  }
+  #about-me-right{
+    display: block;
+  }
+
+  #about-me-left{
+    text-align: left;
+  }
+  header{
+    font-size: 2em;
+  }
 }
 
 /* Footer */
 
 footer {
+  width: 100%;
   grid-area: footer;
   background: #F6E8EA;
   align-items: baseline;
-}
-
-#footercontainer {
+  height: 2.5em;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
-#footercontainer img {
-  height: 30px;
-  object-fit: contain;
-  padding: 5px;
-}
-
-#footercontainer img:hover {
-  transform: scale(1.1);
-}
 
 /* footer end */
 

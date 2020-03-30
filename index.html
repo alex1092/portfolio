@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-
+  <body>
     <div id="container">
+      <!-- nav bar-->
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-        <!-- nav bar-->
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <!-- Header-->
+      <header>
+        <h1>
+          Welcome!<br />
+          I'm Alexander!
+        </h1>
+        <p>Web Developer</p>
+        <a id="header-btn" href="#"
+          ><button type="button">Contact Me!</button></a
+        >
+        <div class="icons">
+          <a href="https://twitter.com/explore"
+            ><img src="./media/icons/twitter_icon_white.svg" alt=""
+          /></a>
+          <a href="https://au.linkedin.com/"
+            ><img src="./media/icons/linkedin-logo-white.png" alt="Linkdin link"
+          /></a>
 
-        <!-- Header-->
-        <header>
+          <a href="https://github.com/"
+            ><img src="./media/icons/github-light.png" alt="Git Hub Link"
+          /></a>
+        </div>
+      </header>
 
-            <h1>Welcome!<br> I'm Alexander!</h1>
-            <p>Web Developer</p>
-            <a href="#"><button type="button">Contact Me!</button></a>
-            <div class="icons">
-                <a href="https://twitter.com/explore"><img src="./media/icons/twitter_icon_white.svg" alt=""></a>
-                <a href="https://au.linkedin.com/"><img src="./media/icons/linkedin-logo-white.png"
-                        alt="Linkdin link"></a>
-                <a href="https://github.com/"><img src="./media/icons/github-light.png" alt="Git Hub Link"></a>
-            </div>
+      <!--main-->
+      <main>
+        <div id="about-me-left">
+          <h2>About me</h2>
+          <br />
+          <p>
+            Im a Developer based in Brisbane. I aspire to learn as much as I can
+            about the industry. I am currently studying at Coder Academy in
+            Brisbane, And am always looking to learn new things and expand my
+            skillset
+          </p>
+          <a id="resume-btn" href="#"><button type="button">CV</button></a>
+          <div id="about-me-icon">
+            <a href="https://github.com/"
+              ><img src="./media/icons/Octocat.png" alt="Git Hub Link"
+            /></a>
+            <a href="https://au.linkedin.com/"
+              ><img src="./media/icons/linkedin.svg" alt="Linkdin link"
+            /></a>
+            <a href="https://twitter.com/explore"
+              ><img
+                src="./media/icons/Twitter_Social_Icon_Circle_Color.png"
+                alt="Twitter Link"
+            /></a>
+          </div>
+        </div>
+        <div id="about-me-right">
+          <img src="http://placekitten.com/300/300" alt="" />
+        </div>
+      </main>
 
-        </header>
-
-        <!--main-->
-        <main>
-            <h2>Hi, I'm Alex</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque at dolorum nam, fugiat sapiente
-                esse, autem molestias commodi libero necessitatibus cum sequi enim praesentium numquam nihil blanditiis
-                dicta molestiae perferendis dolores nobis, laudantium reiciendis. Enim tempora doloribus recusandae
-                similique ratione qui quae nostrum nobis, est dolorum error, illo consectetur iusto?</p>
-        </main>
-
-        <!--footer-->
-        <footer>
-            <div id="footercontainer">
-                <span>Alex Little</span>
-                <a href="https://github.com/"><img src="./media/icons/Octocat.png" alt="Git Hub Link"></a>
-                <a href="https://au.linkedin.com/"><img src="./media/icons/linkedin.svg" alt="Linkdin link"></a>
-                <a href="https://twitter.com/explore"><img src="./media/icons/Twitter_Social_Icon_Circle_Color.png"
-                        alt="Twitter Link"></a>
-            </div>
-        </footer>
+      <!--footer-->
+      <footer>
+        <div id="footercontainer">
+          <span>© Alex Little - Made using HTML & CSS 2020</span>
+        </div>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
