@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Nav start */
@@ -18,7 +18,7 @@ body {
 nav {
   grid-area: nav;
   width: 100%;
-  background-color: #F6E8EA;
+  background-color: #f6e8ea;
 }
 
 nav ul {
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav li:hover {
-  background-color: #F39C6B;
+  background-color: #f39c6b;
 }
 
 #container {
@@ -49,7 +49,14 @@ nav li:hover {
 
 header {
   grid-area: header;
-  background: linear-gradient(-45deg, #F39C6B, #FF3864, #0197F6, #448FA3, #68C5DB);
+  background: linear-gradient(
+    -45deg,
+    #f39c6b,
+    #ff3864,
+    #0197f6,
+    #448fa3,
+    #68c5db
+  );
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -61,7 +68,7 @@ header {
   flex-flow: wrap;
   flex-direction: column;
   justify-content: center;
-  color: #F6E8EA;
+  color: #f6e8ea;
   font-size: 1.3em;
   animation: gradient 8s ease infinite;
 }
@@ -91,17 +98,15 @@ a button {
   text-decoration: none;
   font-weight: 400;
   font-size: 1.3rem;
-  color: #F6E8EA;
+  color: #f6e8ea;
   text-align: center;
   transition: all 0.2s;
   margin: 20px 0 5px 0;
 }
 
-@media only screen 
-
-#header-btn button:hover {
+@media only screen #header-btn button:hover {
   color: #261447;
-  background-color: #F6E8EA;
+  background-color: #f6e8ea;
 }
 
 .icons img {
@@ -118,7 +123,7 @@ a button {
 
 /* header end */
 
-main {
+#front-page-main {
   grid-area: main;
   display: grid;
   grid-template-areas: "left right";
@@ -126,49 +131,46 @@ main {
   padding: 10%;
 }
 
-#about-me-left{
+#about-me-left {
   grid-area: left;
   display: flex;
   flex-direction: column;
 }
-#about-me-left img{
+#about-me-left img {
   width: 40px;
   display: inline;
 }
 
-#about-me-right{
+#about-me-right {
   grid-area: right;
   display: none;
   margin: 10%;
 }
- 
 
-#resume-btn button{
+#resume-btn button {
   margin: 5%;
   border: black 1px solid;
   color: black;
-  padding: .3em 2em;
+  padding: 0.3em 2em;
 }
 
-#resume-btn button:hover{
-  background-color: #22181C;
+#resume-btn button:hover {
+  background-color: #22181c;
   color: white;
 }
 
-
-
 @media only screen and (min-width: 768px) {
-  main{
+  main {
     margin: 5%;
   }
-  #about-me-right{
+  #about-me-right {
     display: block;
   }
 
-  #about-me-left{
+  #about-me-left {
     text-align: left;
   }
-  header{
+  header {
     font-size: 2em;
   }
 }
@@ -178,14 +180,13 @@ main {
 footer {
   width: 100%;
   grid-area: footer;
-  background: #F6E8EA;
+  background: #f6e8ea;
   align-items: baseline;
   height: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 /* footer end */
 
@@ -203,3 +204,159 @@ form {
 }
 
 /*contact form end */
+
+/* Porfolio start */
+
+#portfolio-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#portfolio-header {
+  font-size: 2em;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background: url(http://placekitten.com/200/200);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background: url(http://placekitten.com/200/200);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio3 {
+  grid-area: 2 / 1 / 3 / 2;
+  background: url(http://placekitten.com/200/200);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio4 {
+  grid-area: 2 / 2 / 3 / 3;
+  background: url(http://placekitten.com/200/200);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio5 {
+  grid-area: 3 / 1 / 4 / 2;
+  background: url(http://placekitten.com/200/200);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio6 {
+  grid-area: 3 / 2 / 4 / 3;
+  background: url(http://placekitten.com/200/200);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-link{
+  text-decoration: none;
+  display: block;
+  font-size: 1.5em;
+  padding: .4em .4em;
+  border: 1px solid black;
+  background: #F6E8EA95;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .portfolio1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: lightblue;
+    height: 300px;
+  }
+  .portfolio2 {
+    grid-area: 1 / 2 / 2 / 3;
+    height: 300px;
+    background-color: lightblue;
+  }
+  .portfolio3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: lightblue;
+    height: 300px;
+  }
+  .portfolio4 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: lightblue;
+    height: 300px;
+  }
+  .portfolio5 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: lightblue;
+    height: 300px;
+  }
+  .portfolio6 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: lightblue;
+    height: 300px;
+  }
+}
