@@ -54,14 +54,7 @@ nav li:hover {
 header {
   margin-top: 30px;
   grid-area: header;
-  background: linear-gradient(
-    -45deg,
-    #f39c6b,
-    #ff3864,
-    #0197f6,
-    #448fa3,
-    #68c5db
-  );
+  background: linear-gradient( -45deg, #f39c6b, #ff3864, #0197f6, #448fa3, #68c5db);
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -77,8 +70,6 @@ header {
   font-size: 1.7em;
   animation: gradient 8s ease infinite;
 }
-
-
 
 @keyframes gradient {
   0% {
@@ -116,10 +107,6 @@ header h1 {
   background-color: #f6e8ea;
 }
 
-#portfolio-main{
-  padding: 10px;
-}
-
 .icons img {
   margin-top: 10px;
   widows: 40px;
@@ -139,7 +126,9 @@ header h1 {
   display: grid;
   grid-template-areas: "left right";
   text-align: center;
-  padding: 10%;
+  padding: 5%;
+}
+
 }
 
 #about-me-left {
@@ -147,6 +136,7 @@ header h1 {
   display: flex;
   flex-direction: column;
 }
+
 #about-me-left img {
   width: 40px;
   display: inline;
@@ -171,13 +161,9 @@ header h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  main {
-    margin: 5%;
-  }
   #about-me-right {
     display: block;
   }
-
   #about-me-left {
     text-align: left;
   }
@@ -201,7 +187,7 @@ footer {
 
 /* footer end */
 
-#contact-header{
+#contact-header {
   height: 40vh;
 }
 
@@ -227,7 +213,11 @@ form {
   align-items: center;
   height: 40vh;
 }
-
+.portfolio-title{
+  text-align: center;
+  padding: 20px;
+  background-color: #26144722;
+}
 
 .portfolioimg {
   /* grid-area: 1 / 1 / 2 / 2; */
@@ -239,6 +229,7 @@ form {
   object-fit: contain;
   display: block;
 }
+
 .portfolio-link {
   margin-top: 10px;
   text-decoration: none;
@@ -247,6 +238,7 @@ form {
   padding: 0.4em 0.4em;
   border: 2px solid #f13030;
   text-align: center;
+  color: white;
 }
 
 .portfolio-link:hover {
@@ -278,7 +270,7 @@ form {
 
 .portfolio-text {
   color: white;
-  font-size: 1.2em;
+  font-size: .7em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -296,7 +288,6 @@ form {
     justify-content: center;
     align-content: center;
   }
-
   .portfolioimg {
     background-color: lightblue;
     height: 300px;
@@ -304,9 +295,11 @@ form {
 }
 
 /* Start of blog page */
-#blog-header{
+
+#blog-header {
   height: 40vh;
 }
+
 #blog-container {
   margin: 1em;
   font-size: 1.2em;
@@ -319,23 +312,52 @@ form {
 
 .blog-post {
   margin: 10px;
-  background-color: lightblue;
-  padding:1em;
+  padding: 1em;
+  box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.20);
 }
 
 .blog-post img {
   width: 250px;
   height: 250px;
 }
+
 .blog-btn button {
-  border: black;
   padding: 1em;
   border: black 2px solid;
   margin-top: 10px;
   transition: all .2;
+  background: #ffffff00;
 }
 
 .blog-btn button:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+}
+
+/* Blog Posts */
+
+.small-blog-quote {
+  font-size: .7em;
+  font-style: italic;
+}
+
+article{
+  padding: 5%;
+  text-align: center;
+}
+
+article hr{
+  display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+
+}
+
+.author{
+  font-size: small;
+  font-style: italic;
 }
