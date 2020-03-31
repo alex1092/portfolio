@@ -102,15 +102,6 @@ header h1 {
   margin: 20px 0 5px 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .header-btn button:hover {
-    color: #261447;
-    background-color: #fff;
-  }
-
-
-}
-
 .icons img {
   margin-top: 10px;
   widows: 40px;
@@ -130,7 +121,8 @@ header h1 {
   display: grid;
   grid-template-areas: "left right";
   text-align: center;
-  padding: 2% 10%;}
+  padding: 2% 10%;
+}
 
 }
 
@@ -139,7 +131,6 @@ header h1 {
   display: flex;
   flex-direction: column;
   padding: 20px;
-
 }
 
 #about-me-left img {
@@ -147,7 +138,7 @@ header h1 {
   display: inline;
 }
 
-#about-me-left img:hover{
+#about-me-left img:hover {
   transform: scale(1.2);
 }
 
@@ -155,7 +146,6 @@ header h1 {
   grid-area: right;
   display: none;
   padding: 20px;
-
 }
 
 #resume-btn button {
@@ -170,18 +160,6 @@ header h1 {
 #resume-btn button:hover {
   background-color: #22181c;
   color: white;
-}
-
-@media only screen and (min-width: 768px) {
-  #about-me-right {
-    display: block;
-  }
-  #about-me-left {
-    text-align: left;
-  }
-  header {
-    font-size: 2em;
-  }
 }
 
 /* Footer */
@@ -258,7 +236,7 @@ input[type=submit]:hover {
 
 .portfolio-title {
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 50px;
   background-color: white;
   color: #22181c;
 }
@@ -309,12 +287,12 @@ input[type=submit]:hover {
 }
 
 .portfolio-container:hover .portfolio-overlay {
-  opacity: 1;
+  opacity: .7;
 }
 
 .portfolio-text {
   color: white;
-  font-size: .7em;
+  font-size: 1.2em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -322,21 +300,6 @@ input[type=submit]:hover {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: center;
-    align-content: center;
-  }
-  .portfolioimg {
-    background-color: lightblue;
-    height: 300px;
-  }
-}
 
 /* Start of blog page */
 
@@ -353,7 +316,10 @@ input[type=submit]:hover {
   justify-content: center;
   align-content: center;
 }
-
+.blog-title{
+  text-align:center;
+  padding: 30px 50px;
+}
 .blog-post {
   margin: 10px;
   padding: 1em;
@@ -404,3 +370,50 @@ article hr {
   font-size: small;
   font-style: italic;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+
+  }
+  .portfolioimg {
+    background-color: lightblue;
+    height: 300px;
+  }
+
+  .portfolio-text{
+    font-size: 1em;
+  }
+  
+  .header-btn button:hover {
+    color: #261447;
+    background-color: #fff;
+  }
+  #about-me-right {
+    display: block;
+  }
+  #about-me-left {
+    text-align: left;
+  }
+  header {
+    font-size: 2em;
+  }
+
+  #blog-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+
