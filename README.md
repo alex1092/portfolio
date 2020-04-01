@@ -15,3 +15,36 @@ The design is responsive and accesablble.  It features a fixed navigation bar, c
 
 
 ![](./docs/portfolio.png)
+
+
+## Wirefram & Design
+
+![](docs/wirefram-desktop.png)
+![](docs/wirefram-mobile.png)
+
+## Screenshots
+
+### Desktop
+![](./docs/screenshot-index.png)
+![](./docs/portfolio-screenshot.png)
+![](./docs/blog-screenshot.png)
+![](./docs/contact-screenshot.png)
+
+### Mobile
+![](./docs/mobile-screenshot-index.png)
+
+![](./docs/mobile-portfolio.png)
+
+![](./docs/mobile-blog.png)
+
+![](./docs/contact-screenshot.png)
+
+## Target audience
+
+My portfolio was created to show any future employees or for a company who needs a developer
+
+## Tech Stack
+* html
+* css
+* icons imported from font awesome
+* Images from http://www.unsplash.com
