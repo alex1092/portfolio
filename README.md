@@ -37,7 +37,7 @@ The design is responsive and accesablble.  It features a fixed navigation bar, c
 
 ![](./docs/mobile-blog.png)
 
-![](./docs/contact-screenshot.png)
+![](./docs/mobile-contact.png)
 
 ## Target audience
 
