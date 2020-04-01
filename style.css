@@ -13,7 +13,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Nav start */
+/* Nav start text component */
 
 nav {
   z-index: 1;
@@ -51,8 +51,8 @@ nav li:hover {
 
 /* header start */
 
+/* text component  */
 .context {
-  z-index: 1;
   color: white;
   width: 100%;
   display: flex;
@@ -64,7 +64,6 @@ nav li:hover {
   margin-top: 2em;
 }
 .alt-context{
-  z-index: 1;
   color: white;
   width: 100%;
   display: flex;
@@ -291,6 +290,8 @@ nav li:hover {
   padding: 20px;
 }
 
+/* graphical component  */
+
 #about-me-right img {
   width: 100%;
   height: auto;
@@ -324,7 +325,7 @@ footer {
   color: white;
 }
 
-/* footer end */
+/* footer end text component */
 
 .form-flexy {
   display: flex;
@@ -390,6 +391,8 @@ input[type=submit]:hover {
   background-color: white;
   color: #22181c;
 }
+
+/* graphical compnent  */
 
 .portfolioimg {
   /* grid-area: 1 / 1 / 2 / 2; */
@@ -474,7 +477,7 @@ input[type=submit]:hover {
   padding: 1em;
   box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.20);
 }
-
+/* graphical component  */
 .blog-post img {
   width: 250px;
   height: 250px;
@@ -531,6 +534,7 @@ article hr {
     align-content: center;
     padding: 15px;
   }
+  /* grpahical component  */
   .portfolioimg {
     background-color: lightblue;
     height: 300px;
