@@ -24,20 +24,7 @@ The design is responsive and accesablble.  It features a fixed navigation bar, c
 
 ## Screenshots
 
-### Desktop
-![](./docs/screenshot-index.png)
-![](./docs/portfolio-screenshot.png)
-![](./docs/blog-screenshot.png)
-![](./docs/contact-screenshot.png)
 
-### Mobile
-![](./docs/mobile-screenshot-index.png)
-
-![](./docs/mobile-portfolio.png)
-
-![](./docs/mobile-blog.png)
-
-![](./docs/mobile-contact.png)
 
 ## Target audience
 
