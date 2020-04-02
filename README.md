@@ -14,17 +14,16 @@ The design is responsive and accesablble.  It features a fixed navigation bar, c
 * There is also various links to my twitter, linkedin and github on the index.html and contact.html page
 
 
-![](./docs/portfolio.png)
-
+## Data Flow Diagram: [Link](/docs/data-flow-diagram.png)
 
 ## Wirefram & Design
 
-![](docs/wirefram-desktop.png)
-![](docs/wirefram-mobile.png)
+#### A link to mobile can be found: [Here](./docs/wireframe/wirefram-mobile.png)
+#### A link to desktop can be found: [here](./docs/wireframe/wirefram-desktop.png)
 
 ## Screenshots
 
-
+#### A link to screenshots can be found: [Here](https://github.com/alex1092/portfolio/tree/master/docs/screenshots)
 
 ## Target audience
 
