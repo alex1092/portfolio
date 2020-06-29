@@ -397,12 +397,17 @@ input[type=submit]:hover {
 /*contact form end */
 
 /* Porfolio start */
-
+#portfolio-main {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .title {
   display: block;
   position: relative;
   text-align: center;
-  padding: 5% 30%;
+  padding: 2%;
   background-color: white;
   color: #22181c;
 }
@@ -475,79 +480,8 @@ input[type=submit]:hover {
   align-items: center;
 }
 
-/* Start of blog page */
 
-#blog-container {
-  margin: 1em;
-  font-size: 1.2em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
 
-.blog-title {
-  text-align: center;
-  padding: 30px 50px;
-}
-
-.blog-post {
-  margin: 10px;
-  padding: 1em;
-  box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.20);
-  z-index: 1;
-}
-
-/* graphical component  */
-
-.blog-post img {
-  width: 250px;
-  height: 250px;
-}
-
-.blog-btn {
-  z-index: 1;
-  padding: .2em;
-  border: black 1.5px solid;
-  margin-top: 10px;
-  text-decoration: none;
-  color: black;
-  font-weight: 400;
-}
-
-.blog-btn:hover {
-  background-color: black;
-  color: white;
-}
-
-/* Blog Posts */
-
-.small-blog-quote {
-  font-size: .7em;
-  font-style: italic;
-}
-
-article {
-  padding: 5%;
-  text-align: center;
-}
-
-article hr {
-  display: block;
-  unicode-bidi: isolate;
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  overflow: hidden;
-}
-
-.author {
-  font-size: small;
-  font-style: italic;
-  padding-bottom: .7em;
-}
 
 @media only screen and (min-width: 768px) {
   nav ul {
@@ -576,12 +510,13 @@ article hr {
     font-size: 2em;
   }
   .portfolio-grid {
-    display: grid;
+    margin: 0 auto;
+    display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: center;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    width: 70%;
     align-content: center;
     padding: 15px;
   }
